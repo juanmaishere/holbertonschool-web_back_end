@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """floor function , returns the lowest int asociated with x float WIH ANOTATIONS"""
-from math import floor
+import math
 
 
-def floors(n: float) -> int:
+def floor(n: float) -> int:
     """ Return mathfloor value for x float"""
-    res = floor(n)
+    res = math.floor(n)
     return res
