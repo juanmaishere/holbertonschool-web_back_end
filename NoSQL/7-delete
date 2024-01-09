@@ -1,0 +1,4 @@
+// Delete many MongoDB documents
+db.school.deleteMany(
+  { name: "Holberton school" },
+)
