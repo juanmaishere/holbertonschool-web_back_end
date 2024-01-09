@@ -1,0 +1,2 @@
+// Agregate DBFUNCTIONALITY , Count documents
+db.school.count()
