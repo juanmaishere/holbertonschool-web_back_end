@@ -5,5 +5,12 @@ import pymongo
 
 def update_topics(mongo_collection, name, topics):
   if mongo_collection:
-    lista = list(topics)
-    mongo_collection.update_many({topics: lista})
+    mongo_collection.update_many(
+      {"name": name},
+      {"$set":
+        {
+        "topics": topics
+        }
+      }
+    )
+    return mongo_collection
