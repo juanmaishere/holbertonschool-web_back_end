@@ -8,7 +8,7 @@ export default class ClassRoom {
     * @param {string} name - The name of the classroom.
     * @param {number} length - The length of the classroom (assuming this is a measurement).
     * @param {string[]} students - An array of student names in the classroom.
-    */
+  */
   constructor(name, length, students) {
     if (typeof name === 'string') {
       this._name = name;
@@ -17,14 +17,8 @@ export default class ClassRoom {
     }
     if (typeof length === 'number') {
       this._length = length;
-    } else {
-      throw new Error('Invalid type for parameter "length". Expected a number.');
     }
-    if (Array.isArray(students) && students.every(student => typeof student === 'string')) {
-      this._students = students;
-    } else {
-      throw new Error('Invalid type for parameter "students". Expected an array of strings.');
-    }
+    this._students = students
   };
   get name() {
     return this._name();
@@ -51,4 +45,4 @@ export default class ClassRoom {
   set students(students) {
     this._students = students
     }
-  };
+};
