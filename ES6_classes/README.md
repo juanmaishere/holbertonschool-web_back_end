@@ -1,0 +1,2 @@
+README FOR ES6 CLASSES : EXCERCISES AND LESSONS
+check for more @juanmaishere
