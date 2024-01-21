@@ -4,12 +4,12 @@
  */
 export default class Currency {
 
-  constructor(name, code) {
+  constructor(code, name) {
     if (typeof name !== 'string' || typeof code !== 'string') {
       throw new Error('Both name and code must be strings.');
     }
-    this._name = name;
     this._code = code;
+    this._name = name;
   }
 
   get name() {
