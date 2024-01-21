@@ -3,7 +3,6 @@
  * @class
  */
 export default class Currency {
-
   constructor(code, name) {
     if (typeof name !== 'string' || typeof code !== 'string') {
       throw new Error('Both name and code must be strings.');
@@ -33,6 +32,6 @@ export default class Currency {
   }
 
   displayFullCurrency() {
-  return `${this._code} (${this._name})`;
+  return `${this._name} (${this._code})`;
   }
 }
