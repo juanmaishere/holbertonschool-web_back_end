@@ -13,26 +13,26 @@ export default class Currency {
   }
 
   get name() {
-    return this._name
+    return this._name;
   }
 
   set name(name) {
-    if (typeof(name) === 'string') {
-      this._name = name
+    if (typeof name === 'string') {
+      this._name = name;
     }
   }
 
   get code() {
-    return this._code
+    return this._code;
   }
 
-  set code(code){
-    if (typeof(code) === 'string') {
-      this._code = code
+  set code(code) {
+    if (typeof code === 'string') {
+      this._code = code;
     }
   }
 
-  displayFullCurrency(){
-  return `${this._code} (${this._name})`
+  displayFullCurrency() {
+  return `${this._code} (${this._name})`;
   }
 }
